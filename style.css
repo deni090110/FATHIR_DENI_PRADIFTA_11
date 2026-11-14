@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+/* --- HALAMAN LOGIN, CREATE, EDIT, INDEX --- */
+body:has(.login-container),
+body:has(.card),
+body:has(> form) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.login-container,
+.card,
+body > form {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 380px;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+h1, h1.rr {
+    font-size: 18px;
+    color: #1e3a8a;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container > div {
+    background-color: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+form p,
+form > div {
+    margin-bottom: 15px;
+}
+
+.card nav li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.card nav a {
+    display: block;
+    text-align: center;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 9px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+.navbar {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .brand {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.navbar .menu a {
+    color: white;
+    text-decoration: none;
+    margin-left: 12px;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+
+
+
+
+.container {
+    max-width: 900px;
+    margin: 25px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    margin-bottom: 15px;
+    color: #1e3a8a;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.alert {
+    background-color: #dcfce7;
+    color: #166534;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: white;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input, select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button[type="submit"]:not(.btn) {
+    width: 100%;
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    margin-right: 6px;
+    margin-bottom: 4px;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 13px;
+    display: inline-block;
+}
+
+.btn-edit {
+    background-color: rgb(7, 7, 121);
+}
+
+.btn-hapus {
+    background-color:rgb(7, 7, 121);
+}
